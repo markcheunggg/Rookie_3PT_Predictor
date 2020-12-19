@@ -10,8 +10,8 @@ from sklearn.metrics.pairwise import euclidean_distances
 """
 Rookie 3P% Improvement Predictor.
 
-Predicts an NBA player's increase in 3P% from their rookie season to their second season using their draft age,
-draft position, and college/rookie season shooting stats. Also lists previous NBA players who have had
+The following code predicts an NBA player's increase in 3P% from their rookie season to their second season using their
+draft age, draft position, and college/rookie season shooting stats. It also lists previous NBA players who have had
 similar college and rookie shooting numbers to that player.
 
 """
@@ -230,7 +230,7 @@ def similarities(name):
 # User Input
 player_name = input("Enter a NBA player's name: ")
 if player_name in rookies2019_20_stats.Name.values:
-    # Predicts a Rookie's Shooting improvements using the a Random Forests Model.
+    # Predicts a Rookie's Shooting improvements using a Random Forests Model.
     rf_predict_curr(player_name)
     similarities(player_name)
 else:
